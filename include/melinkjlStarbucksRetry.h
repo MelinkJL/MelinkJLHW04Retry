@@ -1,6 +1,6 @@
 #include "Starbucks.h"
 
-class melinkjlStarbucks : public Starbucks 
+class melinkjlStarbucksRetry : public Starbucks 
 {
   public:
 	virtual void build(Entry* c, int n);

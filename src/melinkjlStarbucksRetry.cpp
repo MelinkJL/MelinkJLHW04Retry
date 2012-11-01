@@ -1,4 +1,6 @@
-#include "melinjlStarbucksRetry.h"
+#include "melinkjlStarbucksRetry.h"
+#include <math.h>
+#include <iomanip>
 
 void melinkjlStarbucksRetry::build(Entry* c, int n)
 {
@@ -72,17 +74,17 @@ void melinkjlStarbucksRetry::build(Entry* c, int n)
 
 Entry* melinkjlStarbucksRetry::getNearest(double x, double y)
 {
-	double shortestDist = 1;
+	double shortestDist = sqrt(2.0f);
 	double distCur;
 	int currentIndex = 0;
 	for (int i = 0; i < lengthOfArray; i++)
 	{
-		distCur = sqrt((((entryArray[i].x - x) * (entryArray[i].x - x)) + ((entryArray[i].y - y) * (entryArray[i].y - y);
+		distCur = sqrt((((entryArray[i].x - x) * (entryArray[i].x - x)) + ((entryArray[i].y - y) * (entryArray[i].y - y))));
 		if (distCur < shortestDist)
 		{
 			shortestDist = distCur;
 			currentIndex = i;
 		}
 	}
-	return entryArray[currentIndex];
+	return &(entryArray[currentIndex]);
 }

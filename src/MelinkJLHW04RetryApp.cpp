@@ -22,24 +22,25 @@ void MelinkJLHW04RetryApp::setup()
 {
 	numberOfEntries = 0;
 	Entry* entryArray = readIntoArray();
-	melinkjlStarbucks* sortedArray = new melinkjlStarbucks;
+	melinkjlStarbucksRetry* sortedArray = new melinkjlStarbucksRetry;
 	(*sortedArray).build(entryArray, numberOfEntries);
 	delete [] entryArray;
-	Entry* testPoint = (*sortedArray).getNearest(.74326, .61053);
-	cout << (*testPoint).x;
+	Entry* testPoint = (*sortedArray).getNearest(.7432, .6105);
+	int x;
 }
 
 Entry* MelinkJLHW04RetryApp::readIntoArray()
 {
 	string name;
 	double xPos, yPos;
-	ifstream input("../../../resources/Starbucks_2006.csv");
+	ifstream input("Starbucks_2006.csv");
+	//ifstream input("../../../resources/Starbucks_2006.csv");
 	if (input.is_open())
 	{
 		// Determines the size of the array to be instantiated.
 		while (input.good())
 		{
-			getline(input, name, '\r');
+			getline(input, name, ',');
 			input >> xPos;
 			input.get();
 			input >> yPos;
