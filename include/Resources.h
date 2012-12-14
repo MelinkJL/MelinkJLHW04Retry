@@ -1,4 +1,4 @@
 #pragma once
 #include "cinder/CinderResources.h"
 
-//#define RES_MY_RES			CINDER_RESOURCE( ../resources/, image_name.png, 128, IMAGE )
+#define RES_US_MAP			CINDER_RESOURCE( ../resources/, usMap.jpg, 128, IMAGE )

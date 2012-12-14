@@ -42,5 +42,17 @@
     <None Include="..\resources\Starbucks_2006.csv">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="..\resources\Census_2000.csv">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\Census_2010.csv">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\Census_2000_Altered.csv">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\Census_2010_Altered.csv">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -116,6 +116,10 @@
     <ResourceCompile Include="Resources.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\resources\Census_2000.csv" />
+    <None Include="..\resources\Census_2000_Altered.csv" />
+    <None Include="..\resources\Census_2010.csv" />
+    <None Include="..\resources\Census_2010_Altered.csv" />
     <None Include="..\resources\Starbucks_2006.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
